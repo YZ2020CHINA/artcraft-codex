@@ -1,0 +1,72 @@
+{
+  "repository": "https://github.com/midasmatterhorn/artcraft-skills",
+  "commit": "042c5d4ddcd8e54178d72db3bc686a18658eee8d",
+  "license": "licenses/artcraft-skills-MIT.txt",
+  "apps": {
+    "filmcraft": {
+      "localVersion": "filmcraft-cli 0.18.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/filmcraft",
+      "upstreamSkillSha256": "9652d9b749fa3b2d0dcec839b312549a4da192382ba8bfeea359c8bade174494"
+    },
+    "effectcraft": {
+      "localVersion": "effectcraft-cli 0.22.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/effectcraft",
+      "upstreamSkillSha256": "469476148191e95e036cba78c7159b9bb03e754879692f2a19e75c1548bbad98"
+    },
+    "photocraft": {
+      "localVersion": "photocraft-cli 0.21.0 (efb7ebd0c, 2026-11-06)",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/photocraft",
+      "upstreamSkillSha256": "bb7bfba5004d8e4dfdeff54307b1b22ada54075e4b38f39ff0d9b46542f53d37"
+    },
+    "vectorcraft": {
+      "localVersion": "vectorcraft-cli 0.22.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/vectorcraft",
+      "upstreamSkillSha256": "83bf3da3c794a9300ce3ff049c5a1a8d2c150e258719e418a545be0771e3fb26"
+    },
+    "designcraft": {
+      "localVersion": "designcraft-cli 0.18.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/designcraft",
+      "upstreamSkillSha256": "12a0e513daad34001b99b0ffab3cc99b0f415b6df67a5d923ef1b7dad1e07a63"
+    },
+    "figcraft": {
+      "localVersion": "figcraft-cli 0.16.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/figcraft",
+      "upstreamSkillSha256": "95c94bcd4fadad1a11bbb93eb0a7b043e1caae268ca5f7eade0d5cdfa9cdaf1b"
+    },
+    "soundcraft": {
+      "localVersion": "soundcraft-cli 0.18.0 (windows x86_64)",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/soundcraft",
+      "upstreamSkillSha256": "1283fd928fbab4c9c27beb0504942a8d988a8c4e8fcba4c5e3c2393c9e27d58c"
+    },
+    "lightcraft": {
+      "localVersion": "lightcraft-cli 0.19.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/lightcraft",
+      "upstreamSkillSha256": "ed204f5591e82f417b1f9afdf97730c2d65e4c096e382c2a9b9ff197f151a3ae"
+    },
+    "deckcraft": {
+      "localVersion": "deckcraft-cli 0.16.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/deckcraft",
+      "upstreamSkillSha256": "3bae1a3738b2f1da2d2101361f687c01a295259c87b11b5b38b08b1832cb5eab"
+    },
+    "gridcraft": {
+      "localVersion": "gridcraft-cli 0.17.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/gridcraft",
+      "upstreamSkillSha256": "b41d4f9df43063ed3b418606ca1a5b586b124c1e8e9bd5ebed4bed05fd6b795f"
+    },
+    "wordcraft": {
+      "localVersion": "wordcraft-cli 0.16.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/wordcraft",
+      "upstreamSkillSha256": "7b335708b7865c0adf2c3c0a006cb506fa03dfe9fd82fef0694f3dcee1ce66be"
+    },
+    "pdfcraft": {
+      "localVersion": "pdfcraft-cli 0.19.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/pdfcraft",
+      "upstreamSkillSha256": "a223e4f4a44438fa7062fc14759dc9269d6c8790284695e0679784d5c05b2f7f"
+    },
+    "craftanything": {
+      "localVersion": "craft-anything-cli 0.5.0",
+      "source": "https://github.com/midasmatterhorn/artcraft-skills/tree/042c5d4ddcd8e54178d72db3bc686a18658eee8d/craft-anything",
+      "upstreamSkillSha256": "3f9df1c827e8355c77946279ce80e4938facdbdbea29c2776b848f4248ba398a"
+    }
+  }
+}

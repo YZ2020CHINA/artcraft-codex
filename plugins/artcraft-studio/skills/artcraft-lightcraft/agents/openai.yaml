@@ -1,0 +1,4 @@
+interface:
+  display_name: "LightCraft 照片调色"
+  short_description: "通过本机 ArtCraft MCP 进行RAW 显影、照片库管理、批量照片调色、裁切与照片导出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-lightcraft 完成我的创作任务并保存工程。"

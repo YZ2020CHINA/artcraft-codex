@@ -1,0 +1,4 @@
+interface:
+  display_name: "FilmCraft 视频剪辑"
+  short_description: "通过本机 ArtCraft MCP 进行视频素材导入、时间线剪辑、转场、字幕、视频预览与导出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-filmcraft 完成我的创作任务并保存工程。"

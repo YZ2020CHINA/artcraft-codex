@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "artcraft-studio",
+  "version": "1.1.0",
+  "description": "连接 D:/artcraft 的 13 款本地创作应用，支持设计、剪辑、合成、声音与文档协作。",
+  "author": {
+    "name": "Local ArtCraft integration"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ArtCraft 本地创作工作台",
+        "shortDescription": "本地设计、视频剪辑、动效、音频与文档协作",
+        "longDescription": "按需启动原生 MCP，通过统一入口发现并调用本机 13 款 ArtCraft 应用。包含总入口与每款应用的专属 skill。",
+        "developerName": "Local ArtCraft integration",
+        "category": "Creativity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "brandColor": "#DB6A45",
+        "logo": "./assets/artcraft-icon.svg",
+        "composerIcon": "./assets/artcraft-icon.svg",
+        "defaultPrompt": [
+          "用 ArtCraft 帮我设计封面，并保留可编辑工程。",
+          "用 FilmCraft 和 SoundCraft 配合剪辑本地视频。"
+        ]
+      }
+    }
+  }
+}

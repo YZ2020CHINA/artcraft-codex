@@ -1,0 +1,4 @@
+interface:
+  display_name: "VectorCraft 矢量设计"
+  short_description: "通过本机 ArtCraft MCP 进行矢量插画、Logo、图标、路径、画板和 SVG/PDF 导出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-vectorcraft 完成我的创作任务并保存工程。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Craft Anything 素材调查"
+  short_description: "通过本机 ArtCraft MCP 进行使用 Craft Anything 调查参考素材、整理证据并生成复刻交接报告，保留可编辑工程"
+  default_prompt: "使用 $artcraft-craftanything 完成我的创作任务并保存工程。"

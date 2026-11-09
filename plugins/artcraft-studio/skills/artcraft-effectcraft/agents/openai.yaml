@@ -1,0 +1,4 @@
+interface:
+  display_name: "EffectCraft 动效合成"
+  short_description: "通过本机 ArtCraft MCP 进行合成、文字动画、关键帧、效果、图层与视频特效渲染，保留可编辑工程"
+  default_prompt: "使用 $artcraft-effectcraft 完成我的创作任务并保存工程。"

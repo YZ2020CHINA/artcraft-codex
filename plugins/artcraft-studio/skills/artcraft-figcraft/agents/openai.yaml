@@ -1,0 +1,4 @@
+interface:
+  display_name: "FigCraft 界面设计"
+  short_description: "通过本机 ArtCraft MCP 进行本地 UI 界面、组件、页面、节点、变量与原型设计，保留可编辑工程"
+  default_prompt: "使用 $artcraft-figcraft 完成我的创作任务并保存工程。"

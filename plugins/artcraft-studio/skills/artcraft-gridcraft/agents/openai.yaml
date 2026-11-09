@@ -1,0 +1,4 @@
+interface:
+  display_name: "GridCraft 表格制作"
+  short_description: "通过本机 ArtCraft MCP 进行本地表格、公式、数据表、图表和 XLSX/CSV 处理，保留可编辑工程"
+  default_prompt: "使用 $artcraft-gridcraft 完成我的创作任务并保存工程。"

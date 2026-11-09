@@ -1,0 +1,4 @@
+interface:
+  display_name: "WordCraft 文档排版"
+  short_description: "通过本机 ArtCraft MCP 进行本地文字文档排版、DOCX 编辑、注释与 PDF 导出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-wordcraft 完成我的创作任务并保存工程。"

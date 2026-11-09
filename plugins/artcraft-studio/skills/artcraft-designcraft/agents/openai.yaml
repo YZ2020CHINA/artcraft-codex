@@ -1,0 +1,4 @@
+interface:
+  display_name: "DesignCraft 版式设计"
+  short_description: "通过本机 ArtCraft MCP 进行海报、画册、多页排版、文字框、印刷与 PDF 输出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-designcraft 完成我的创作任务并保存工程。"

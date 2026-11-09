@@ -1,0 +1,20 @@
+{
+  "name": "artcraft-local",
+  "interface": {
+    "displayName": "ArtCraft 本地插件"
+  },
+  "plugins": [
+    {
+      "name": "artcraft-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/artcraft-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

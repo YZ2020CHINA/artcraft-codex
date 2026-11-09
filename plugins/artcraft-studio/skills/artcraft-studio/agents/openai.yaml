@@ -1,0 +1,4 @@
+interface:
+  display_name: "ArtCraft 创作协作"
+  short_description: "协同使用本机十三款 ArtCraft 应用完成设计、视频剪辑、动效与声音制作"
+  default_prompt: "使用 $artcraft-studio 选择合适的本地应用完成我的设计或剪辑任务。"

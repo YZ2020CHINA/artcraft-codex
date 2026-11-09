@@ -1,0 +1,4 @@
+interface:
+  display_name: "PdfCraft PDF 处理"
+  short_description: "通过本机 ArtCraft MCP 进行本地 PDF 页面整理、合并拆分、提取、OCR 与页面渲染，保留可编辑工程"
+  default_prompt: "使用 $artcraft-pdfcraft 完成我的创作任务并保存工程。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhotoCraft 图像合成"
+  short_description: "通过本机 ArtCraft MCP 进行分层图像编辑、蒙版、滤镜、修图、PSD 和位图导出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-photocraft 完成我的创作任务并保存工程。"

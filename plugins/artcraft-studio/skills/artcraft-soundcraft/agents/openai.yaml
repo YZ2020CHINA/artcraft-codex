@@ -1,0 +1,4 @@
+interface:
+  display_name: "SoundCraft 音频制作"
+  short_description: "通过本机 ArtCraft MCP 进行音频剪辑、多轨会话、混音、声音处理与导出，保留可编辑工程"
+  default_prompt: "使用 $artcraft-soundcraft 完成我的创作任务并保存工程。"
