@@ -4,6 +4,16 @@
 
 插件：`artcraft-studio@artcraft-local`，版本 `1.1.0`。已通过 Codex CLI 安装并确认 `installed: true`、`enabled: true`。包含 14 个 skill：一个协作入口和 13 个应用 skill。使用本机 Python 标准库，不需要 API key、云服务或新增运行依赖。PyYAML 仅在 `.validation-deps` 中用于官方技能校验器。
 
+## Codex 中使用 Claude / GPT 调用插件（2026-11-11 更新）
+
+这次更新后，**在 Codex 里切换到 Claude 模型（例如通过 Magpie 等中转站接入的 Claude API）也可以正常调用本插件的工具和 skill**，与使用 GPT 模型时一致。
+
+- 已在 Codex 桌面版（Windows）实测：修复后 Claude 与 GPT 会话都能加载这组本地插件的 MCP 工具，并实际调用了 Blender、Aseprite、Flux、Stable Audio 的状态工具。
+- 原因：Codex 读取插件 `mcp.json` 时只接受 `type`、`command`、`args`、`env`、`cwd`，`command` 必须是裸可执行名，并会拒绝 `startup_timeout_sec`、`tool_timeout_sec` 等字段；旧格式导致部分模型会话里插件工具不出现。
+- 现在构建脚本生成的 `mcp.json` 统一使用 `cmd.exe` 调用插件目录内的 `launch-mcp.cmd`，本机 Python/Node 的绝对路径和环境变量写在启动器里。
+- 已安装旧版本的用户：重新运行安装/构建脚本后，**新开一个 Codex 聊天或重启 Codex** 即可生效。
+- 长任务需要更长超时时，可在 `~/.codex/config.toml` 对应的 `[mcp_servers.<名称>]` 中设置 `tool_timeout_sec`。
+
 ## 开始使用
 
 重新打开 Codex 或新建本地聊天以加载新增插件。当前聊天的工具目录不会因写入配置而自动获得新工具；若没有 ArtCraft 工具，先检查插件启用状态并重载。

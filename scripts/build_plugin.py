@@ -29,6 +29,17 @@ def write_json(path, obj):
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
+def write_launcher(plugin, command, args, env=None):
+    """Codex plugin stdio servers must use a bare executable, so absolute paths live in a launcher."""
+    def quote(value):
+        return '"' + str(value).replace('%', '%%') + '"'
+    lines = ['@echo off', 'chcp 65001 >nul']
+    lines += ['set "{}={}"'.format(key, str(value).replace('%', '%%')) for key, value in (env or {}).items()]
+    lines.append(' '.join(quote(part) for part in [command, *args]))
+    (plugin / 'launch-mcp.cmd').write_text('\r\n'.join(lines) + '\r\n', encoding='utf-8')
+    return {'type': 'stdio', 'command': 'cmd.exe', 'args': ['/d', '/s', '/c', 'call', './launch-mcp.cmd'], 'cwd': './'}
+
+
 def main():
     (PLUGIN / 'LICENSE').write_bytes((ROOT / 'LICENSE').read_bytes())
     native = json.loads((ROOT / 'evidence/native-mcp.json').read_text(encoding='utf-8'))
@@ -62,9 +73,7 @@ def main():
             'logo': './assets/artcraft-icon.svg', 'composerIcon': './assets/artcraft-icon.svg',
             'defaultPrompt': ['用 ArtCraft 帮我设计封面，并保留可编辑工程。', '用 FilmCraft 和 SoundCraft 配合剪辑本地视频。']}}}})
     write_json(PLUGIN / 'mcp.json', {'$schema': 'https://agent-plugins.org/schemas/1.0.0/mcp.schema.json',
-                                   'mcpServers': {'artcraft': {'command': sys.executable,
-                                       'args': [str(PLUGIN / 'server.py')],
-                                       'startup_timeout_sec': 30, 'tool_timeout_sec': 600}}})
+                                   'mcpServers': {'artcraft': write_launcher(PLUGIN, sys.executable, [str(PLUGIN / 'server.py')])}})
     write_json(ROOT / '.agents/plugins/marketplace.json', {
         'name': 'artcraft-local', 'interface': {'displayName': 'ArtCraft 本地插件'},
         'plugins': [{'name': 'artcraft-studio', 'source': {'source': 'local', 'path': './plugins/artcraft-studio'},

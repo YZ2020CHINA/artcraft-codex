@@ -15,6 +15,7 @@ credentials.json
 config.json
 runtime.json
 **/mcp.json
+**/launch-mcp.cmd
 __pycache__/
 *.py[cod]
 .venv/
